@@ -27,7 +27,7 @@ export const Menu = () => {
         </div>
       <ul className='nav'>
         <li><a href='#home'>Inicio</a></li>
-        <li><a href="#location">La boda</a></li>
+        <li><a href="#location">Detalles del evento</a></li>
         <li><a href="#map">Ubicación</a></li>
         <li><a href="#galery">Fotos</a></li>
         <li><a href="#form">Contacto</a></li>

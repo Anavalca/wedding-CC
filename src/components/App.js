@@ -1,4 +1,5 @@
 import '../stylesheets/App.scss';
+import { Menu } from './Menu';
 import { Main } from './Main';
 import { Location } from './Location';
 import { Map } from './Map';
@@ -10,7 +11,7 @@ export const App = () => {
 
   return (
     <>
-
+      <Menu />
       <Main />
       <Location />
       <Map />

@@ -1,7 +1,7 @@
 main {
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +9,7 @@ main {
 
   .background {
     top: 0;
-    background: url(../images/fondo_principal.jpg) center;
+    background: url(../images/cabecera.jpg) center;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -20,15 +20,13 @@ main {
       z-index: 0;
       width: 100%;
       height: 100%;
-      background-color: #6a626c9e;
-      //background-color: #ffffff4d;
+      background-color: #100f0f38;
       position: absolute;
       content: " ";
     }
   }
 
   .titleContainer {
-    top: 0;
     width: 100%;
     height: 100%;
     display: flex;
@@ -43,6 +41,29 @@ main {
 
       }
 
+    }
+
+  }
+
+  .titleContainer2 {
+    width: 60%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+
+    .date{
+      color: white;
+      font-size: 1.3rem;
+      font-weight: 200;
+    }
+
+    .title{
+      color: white;
+      font-size: 5rem;
+      font-weight: 100;
     }
 
   }

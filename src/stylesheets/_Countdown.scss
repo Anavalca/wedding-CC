@@ -1,0 +1,44 @@
+.countdownContainer {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .dateContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 3.5rem;
+    height: 3.4rem;
+    font-size: 14px;
+
+    @include forTablet {
+      width: 4.9rem;
+      height: 4.9rem;
+    }
+
+    .numberDate {
+      font-size: 18px;
+      color: white;
+
+      @include forTablet {
+        font-size: 28px;
+      }
+
+    }
+
+    .titleDate {
+      font-size: 8px;
+      color: white;
+      transform: translateY(-5px);
+
+      @include forTablet {
+        font-size: 10px;
+      }
+    }
+
+  }
+}
