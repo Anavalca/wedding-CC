@@ -1,0 +1,50 @@
+main {
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .background {
+    top: 0;
+    background: url(../images/fondo_principal.jpg) center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+
+    &:before {
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #6a626c9e;
+      //background-color: #ffffff4d;
+      position: absolute;
+      content: " ";
+    }
+  }
+
+  .titleContainer {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 320px;
+
+      @include forTablet {
+        width: 550px;
+
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,115 @@
+.navContainer {
+  position: sticky;
+  padding-top: 1rem;
+  z-index: 2;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
+
+  @include forTablet {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav {
+    display: none;
+
+    @include forTablet {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      font-size: 14px;
+      font-weight: 300;
+
+      li {
+        padding-right: 1.9rem;
+
+        a {
+          color: white;
+          position: relative;
+
+          &:before {
+            content: "";
+            width: 100%;
+            height: 4px;
+            margin-top: 2px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background: #857379;
+            transition: 0.5s transform ease;
+            transform: scale3d(0, 0.4, 1);
+            transform-origin: 0 50%;
+          }
+
+          &:hover::before {
+            transform: scale3d(1, 0.2, 1);
+          }
+
+          &:before {
+            transform-origin: 50% 50%;
+            background: #857379;
+          }
+        }
+      }
+
+
+    }
+  }
+
+  .countdownContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3px 0 3px 10px;
+
+    @include forTablet {
+      padding: 0px 30px 0 0;
+
+    }
+
+
+
+    .dateContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #857379;
+      width: 3.5rem;
+      height: 3.4rem;
+      font-size: 14px;
+
+      @include forTablet {
+        width: 4.9rem;
+        height: 4.9rem;
+      }
+
+      .numberDate {
+        font-size: 18px;
+
+        @include forTablet {
+          font-size: 28px;
+        }
+
+      }
+
+      .titleDate {
+        font-size: 8px;
+        transform: translateY(-5px);
+
+        @include forTablet {
+          font-size: 10px;
+        }
+      }
+
+    }
+  }
+}

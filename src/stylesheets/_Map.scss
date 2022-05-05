@@ -1,0 +1,30 @@
+.mapContainer {
+  background-color: whitesmoke;
+  padding-top: 5rem;
+
+  .leaflet-container {
+    height: 380px;
+    width: 100%;
+    z-index: 1;
+
+    .leaflet-popup-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      span{
+        font-size: 13px;
+      }
+
+      .popupTitle{
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 600;
+      }
+
+    }
+  }
+
+
+}

@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #857379;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.sectionTitle {
+  padding-top: 1.5rem;
+  font-weight: 200;
+  font-size: 40px;
+  text-transform: uppercase;
+
+  @include forTablet {
+    font-size: 50px;
+  }
+
+}
+
+.sectionLine {
+  width: 110px;
+  border-bottom: 1px solid #8573793a;
+}
+
+.subtitle {
+  max-width: 300px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 13px;
+
+  a {
+    font-weight: 500;
+    cursor: pointer,
+  }
+
+  @include forTablet {
+    max-width: 620px;
+    font-size: 14px;
+  }
+}

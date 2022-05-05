@@ -1,0 +1,22 @@
+.carouselContainer {
+  position: absolute;
+  width: 100%;
+  background-color: #f5f5f5ba;
+
+  .closeCarousel {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+
+    svg {
+      width: 25px;
+      height: 25px;
+
+      path {
+        color: #857379;
+      }
+    }
+  }
+}
+

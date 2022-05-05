@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "El día",
+        "img": "../images/reloj.jpg",
+        "text1": "10 de octubre de 2021",
+        "text2": "12:00h"
+    },
+    {
+        "id": 2,
+        "title": "El espacio",
+        "img": "../images/restaurante.jpg",
+        "text1": "EntreHiedra dispone de salón,  zona ajardinada para cóctel y espacio para baile.",
+        "text2": " "
+    },
+    {
+        "id": 3,
+        "title": "La ubicación",
+        "img": "../images/movilMap.jpg",
+        "text1": "Antigua crta. nacional 321, km 60,5",
+        "text2": "23640 Torre del Campo (Jaén)"
+    }
+]
