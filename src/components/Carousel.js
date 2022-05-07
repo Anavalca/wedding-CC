@@ -1,49 +1,43 @@
-// import Swiper core and required modules
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import galeryData from '../data/galeryData.json';
+import { GaleryElement } from './GaleryElement';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import galeryData from './../data/galeryData.json';
+export const Carousel = () => {
 
-// Import Swiper styles
-import 'swiper/swiper.scss';
-import 'swiper/components/navigation/navigation.scss';
-import 'swiper/components/pagination/pagination.scss';
-import 'swiper/components/scrollbar/scrollbar.scss';
-import "swiper/swiper-bundle.css";
+  
 
-// install Swiper modules
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
-let slides = Array(10).fill(true);
+  const scrollRight = (e) => {
+    const imgList = document.querySelector('.imgList');
+    const screenWidth = window.innerWidth
+    if (screenWidth < 800){
+      imgList.scrollBy(310, 0);
+    } else {
+      imgList.scrollBy(750, 0);
+    }
+  }
 
-slides = galeryData.map((element, i) => (
-  <SwiperSlide key={`slide-${i}`} tag="li" virtualIndex={i}>
-    <img
-      // src={`https://picsum.photos/id/${i + 1}/600/400`}
-      src={element.img}
-      height={550}
-      style={{ listStyle: "none" }}
-      alt={`Slide ${i}`}
-    />
-  </SwiperSlide>
-));
+  const scrollLeft = (e) => {
+    const imgList = document.querySelector('.imgList');
+    const screenWidth = window.innerWidth
+    if (screenWidth < 800){
+      imgList.scrollBy(-310, 0);
+    } else {
+      imgList.scrollBy(-750, 0);
+    }
+  }
 
-const Carousel = ({ initial }) => {
   return (
-    <Swiper
-      spaceBetween={10}
-      slidesPerView={1}
-      initialSlide={initial - 1}
-      id="mainCarousel"
-      tag="section"
-      wrapperTag="ul"
-      navigation
-      pagination={{ clickable: true }}
-      // scrollbar={{ draggable: true }}
-      className={'swiper-container'}
-    >
-      {slides}
-    </Swiper>
-  );
-};
-
-export default Carousel;
+    <section className="carouselContainer">
+        <FontAwesomeIcon className="scroll-arrow fa-lg" id="scroll-left" onClick={scrollLeft} icon={faChevronLeft} />
+      <ul className="imgList">
+        {galeryData.map(elem =>
+        <li className='imgContainer' key={elem.id}>
+          <GaleryElement element={elem} key={elem.id} />
+        </li>
+      )}
+      </ul>
+      <FontAwesomeIcon  className="scroll-arrow fa-lg" id="scroll-right" onClick={scrollRight} icon={faChevronRight} />
+    </section>
+  )
+}
