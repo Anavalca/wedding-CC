@@ -8,11 +8,14 @@ export const Main = () => {
       <div className='titleContainer'>
         <h1 className='titleSubContainer'>
           <p className='title'>Cristina</p>
-          <p className='title'>&</p>
+          <p className='title and'>&</p>
           <p className='title'>Curro</p>
           {/* <span className='date'>2 | septiembre | 2023</span> */}
         </h1>
-          <Countdown />
+        <Countdown />
+      </div>
+      <div className='scrollContainer'>
+        <div className="icon"/>
       </div>
     </main>
   );

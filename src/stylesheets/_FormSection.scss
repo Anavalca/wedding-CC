@@ -1,16 +1,18 @@
 .formContainer {
   width: 100%;
-  background: url(../images/flores.jpg) center;
+  background: url(../images/boda1.jpg) center;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 6rem 0 5rem 0;
+  color: #857379;
 
   .formBackground {
     padding: 20px;
-    background-color: rgba(245, 245, 245, 0.904);
+    background-color: rgba(245, 245, 245, 0.818);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,6 +20,7 @@
 
     .subtitle {
       max-width: 300px;
+      padding: -1rem 0 -1rem 0;
 
       @include forTablet{
         max-width: 400px;

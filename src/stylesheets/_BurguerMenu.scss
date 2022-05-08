@@ -1,15 +1,20 @@
 .hamburguerNav {
   z-index: 2;
-  padding-right: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
   cursor: pointer;
+  background: #959495;
+  width: 53px;
+  height: 53px;
+  border-radius: 88rem;
+  margin-right: 5px;
 
   span {
-    background-color: #857379;
+    background-color: white;
     width: 19px;
-    height: 1px;
+    height: 1.5px;
     margin: 3px;
     border-radius: 25px;
     display: block;
@@ -24,7 +29,7 @@
 }
 
 .open span:nth-child(1) {
-  transform: rotate(45deg) translate(1px, -1px);
+  transform: rotate(45deg) translate(2px, -1px);
 }
 
 .open span:nth-child(2) {
@@ -34,8 +39,6 @@
 .open span:nth-child(3) {
   transform: rotate(-45deg) translate(1px, 0);
 }
-
-//
 
 .closed {
   flex-grow: 0;

@@ -50,9 +50,9 @@ export const Form = () => {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         name="contact_email" />
+      <span>MENSAJE</span>
       <textarea id="message"
         type="text"
-        placeholder="MENSAJE"
         value={message}
         onChange={(e) => setmessage(e.target.value)}
         name="message" />

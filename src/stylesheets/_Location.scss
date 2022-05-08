@@ -32,14 +32,14 @@
       .infoTitle {
         font-family: $titleFont;
         text-transform: capitalize;
-        padding: 2rem 0 1rem 0;
-        font-size: 2rem;
+        padding: 2rem 0 0 0;
+        font-size: 4rem;
         font-weight: 100;
         text-align: center;
 
         @include forTablet {
-          padding: 0 0 1rem 0;
-          font-size: 3.2rem;
+          padding: 0 0 0.2rem 0;
+          font-size: 3.5rem;
         }
       }
 
