@@ -50,7 +50,7 @@ export const Form = () => {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         name="contact_email" />
-      <span>MENSAJE</span>
+      <span className='messageLabel'>MENSAJE</span>
       <textarea id="message"
         type="text"
         value={message}

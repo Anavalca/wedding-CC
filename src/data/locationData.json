@@ -13,7 +13,12 @@
         "icon2":"church",
         "iconText2":"San Ildefonso",
         "icon3":"clock",
-        "iconText3":"19:00h"
+        "iconText3":"19:00h",
+        "mapCoordenateA":"37.776232044685145",
+        "mapCoordenateB":" -3.890250679690567",
+        "mapTitle":"Basílica de San Ildefonso",
+        "mapDescription":"Pl. San Ildefonso, s/n, 23001 Jaén",
+        "url":"google.com/maps/place/Basílica+de+San+Ildefonso/@37.7666182,-3.7887408,17z/data=!3m1!4b1!4m5!3m4!1s0xd6dd77455c7f2b1:0x7096d30ae018568e!8m2!3d37.7666182!4d-3.7865468"
     },
     {
         "id": 2,
@@ -29,6 +34,11 @@
         "icon2":"utensils",
         "iconText2":"Cerro Puerta",
         "icon3":"champagne-glasses",
-        "iconText3":"¡Fiesta!"
+        "iconText3":"¡Fiesta!",
+        "mapCoordenateA":"37.776232044685145",
+        "mapCoordenateB":"37.776232044685145",
+        "mapTitle":"Cerro Puerta",
+        "mapDescription":"Carretera de la Guardia, km 4,8, Cañada Real La Guardia-Los Villares, 23170 Jaén",
+        "url":"https://www.google.com/maps/place/Cerropuerta/@37.748971,-3.739053,15z/data=!4m5!3m4!1s0x0:0x3b64471336d5fb66!8m2!3d37.748971!4d-3.739053"
     }
 ]

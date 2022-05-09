@@ -1,12 +1,14 @@
-import { GaleryTitle } from './GaleryTitle';
-import { Carousel } from './Carousel';
+import { SwiperGalery } from './SwiperGalery'
+
 
 export const Galery = () => {
 
   return (
     <>
-    <GaleryTitle/>
-    <Carousel/>
+      <div id='galery' className='galeryTitleContainer' >
+        <h2 className='sectionTitle'>Galeria de fotos</h2>
+      </div>
+      <SwiperGalery />
     </>
   )
 }
