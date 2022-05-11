@@ -7,8 +7,11 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 6rem 0 5rem 0;
   color: #857379;
+
+  @include forTablet{
+    padding: 5rem 0 4.5rem 0;;
+  }
 
   .formBackground {
     padding: 20px;
@@ -17,6 +20,12 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%;
+
+    @include forTablet{
+      width: auto;
+    }
+
 
     .subtitle {
       max-width: 300px;

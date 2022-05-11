@@ -1,22 +1,16 @@
 import '../stylesheets/App.scss';
-import { Menu } from './Menu';
+import { BurgerMenu } from './BurguerMenu';
+import { Header } from './Header';
 import { Main } from './Main';
-import { Location } from './Location';
-// import { Map } from './Map';
-import { Galery } from './Galery';
-import { FormSection } from './FormSection';
 import { Footer } from './Footer';
 
 export const App = () => {
 
   return (
     <>
-      <Menu />
-      <Main />
-      <Location />
-      {/* <Map /> */}
-      <Galery />
-      <FormSection />
+      <BurgerMenu/>
+      <Header />
+      <Main/>
       <Footer />
     </>
   );

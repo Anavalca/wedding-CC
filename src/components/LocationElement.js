@@ -6,7 +6,7 @@ import { Map } from './Map';
 
 export const LocationElement = ({ element }) => {
   const { img, title, text1, text2, location, style, align, icon1, icon2, icon3, iconText1, iconText2, iconText3,
-    mapCoordenateA, mapCoordenateB, mapTitle, mapDescription } = element;
+    mapCoordenateA, mapCoordenateB, zoom, mapTitle, mapDescription, url } = element;
   const iconArray = [faCalendarDay, faClock, faChurch, faBus, faUtensils, faChampagneGlasses]
 
   const [isOpen, setIsOpen] = useState(false);
@@ -49,14 +49,16 @@ export const LocationElement = ({ element }) => {
           contentLabel={title}
           ariaHideApp={false}
         >
-          <button className="popUpInfoContainer" onClick={toggleModal}>
-            <FontAwesomeIcon icon={faXmark} className='fa-xl' />
-          </button>
           <Map
             mapCoordenateA={mapCoordenateA}
             mapCoordenateB={mapCoordenateB}
+            zoom={zoom}
             mapTitle={mapTitle}
-            mapDescription={mapDescription} />
+            mapDescription={mapDescription}
+            url={url} />
+          <button className="popUpInfoContainer" onClick={toggleModal}>
+            <FontAwesomeIcon icon={faXmark} className='fa-l' />
+          </button>
         </Modal>
       </div>
     </div>

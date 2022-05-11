@@ -1,5 +1,3 @@
-
-
 input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder, #submit::placeholder {
   font-size: 0.875em;
 }
@@ -63,14 +61,14 @@ textarea {
 }
 
 .sent{
-  background: #bee5b5d0 !important;
+  background: $secondaryColor !important;
   font-size: 14px !important;
   font-weight: 500 !important;
-  color: #5c5b5b !important;
+  color: white !important;
 }
 
 #submit:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   font-weight: 400;
 }
 

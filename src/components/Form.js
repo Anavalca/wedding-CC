@@ -2,7 +2,7 @@ import emailjs from 'emailjs-com';
 import { useState } from "react";
 
 const YOUR_SERVICE_ID = "service_jb41tc9";
-const YOUR_TEMPLATE_ID = "template_e9uaova";
+const YOUR_TEMPLATE_ID = "template_709b1qp";
 const YOUR_USER_ID = "user_priKHmSsrK6ZMxp3YGXJ4";
 
 export function validateEmail(email) {
@@ -23,7 +23,7 @@ export const Form = () => {
     e.preventDefault();
 
     if (!validateEmail(email)) {
-      return;
+      return alert('Introduce un correo válido');;
     }
 
     if (enableSubmit && !submittedForm) {

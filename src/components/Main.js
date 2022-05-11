@@ -1,22 +1,15 @@
-import { Countdown } from './Countdown';
+import '../stylesheets/App.scss';
+import { Location } from './Location';
+import { Galery } from './Galery';
+import { FormSection } from './FormSection';
 
 export const Main = () => {
 
   return (
-    <main id='home'>
-      <div className='background' />
-      <div className='titleContainer'>
-        <h1 className='titleSubContainer'>
-          <p className='title'>Cristina</p>
-          <p className='title and'>&</p>
-          <p className='title'>Curro</p>
-          {/* <span className='date'>2 | septiembre | 2023</span> */}
-        </h1>
-        <Countdown />
-      </div>
-      <div className='scrollContainer'>
-        <div className="icon"/>
-      </div>
-    </main>
+    <>
+      <Location />
+      <Galery />
+      <FormSection />
+    </>
   );
 }
