@@ -85,17 +85,13 @@
     border-radius:0 0 1.5rem 1.5rem;
     padding-bottom: 2rem;
 
-
-    li{
+    a {
       border-bottom: 1px solid grey;
       border: 1px solid white;
       width: 80%;
       padding: 5px;
       margin: 7px 0 7px 0;
       text-align: center;
-    }
-
-    a {
       font-size: 1.4rem;
       font-family: $textFont;
       color: white;

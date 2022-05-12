@@ -21,8 +21,7 @@
     .numberDate {
       font-size: 1.8rem;
       color: white;
-      font-family: $numberFont;
-      font-weight: 400;
+      font-weight: 200;
 
       @include forTablet {
         font-size: 2rem;
@@ -34,7 +33,7 @@
     .titleDate {
       font-size: 8px;
       color: white;
-      transform: translateY(-2px);
+      transform: translateY(-7px);
 
       @include forTablet {
         font-size: 10px;

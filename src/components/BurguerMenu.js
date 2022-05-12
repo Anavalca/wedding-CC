@@ -15,12 +15,12 @@ export const BurgerMenu = () => {
       </div>
       <div className={`${burguerToogle ? 'hamburguerNavOpen' : 'closed'}`}>
         {burguerToogle && (
-          <ul className='navBurguer'>
-            <li onClick={() => setBurguerToogle(!burguerToogle)}><a href='#home' >Inicio</a></li>
-            <li onClick={() => setBurguerToogle(!burguerToogle)}><a href="#location">Detalles del evento</a></li>
-            <li onClick={() => setBurguerToogle(!burguerToogle)}><a href="#galery" >Galeria</a></li>
-            <li onClick={() => setBurguerToogle(!burguerToogle)}><a href="#form">Contacto</a></li>
-          </ul>
+          <nav className='navBurguer'>
+            <a href='#home' onClick={() => setBurguerToogle(!burguerToogle)}>Inicio</a>
+            <a href="#location" onClick={() => setBurguerToogle(!burguerToogle)}>Detalles del evento</a>
+            <a href="#galery" onClick={() => setBurguerToogle(!burguerToogle)}>Galeria</a>
+            <a href="#form" onClick={() => setBurguerToogle(!burguerToogle)}>Contacto</a>
+          </nav>
         )}
       </div>
     </>
