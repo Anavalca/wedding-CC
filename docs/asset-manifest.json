@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "./static/css/main.3b00bb6e.css",
-    "main.js": "./static/js/main.80434f57.js",
+    "main.js": "./static/js/main.292c8779.js",
     "static/media/coctails.jpg": "./static/media/coctails.db8c5902dccabc725dcd.jpg",
     "static/media/flores-banner.jpg": "./static/media/flores-banner.39f77a3a640f52554ef3.jpg",
     "static/media/header.jpg": "./static/media/header.208adcff1df35c0f20dd.jpg",
     "index.html": "./index.html",
     "main.3b00bb6e.css.map": "./static/css/main.3b00bb6e.css.map",
-    "main.80434f57.js.map": "./static/js/main.80434f57.js.map"
+    "main.292c8779.js.map": "./static/js/main.292c8779.js.map"
   },
   "entrypoints": [
     "static/css/main.3b00bb6e.css",
-    "static/js/main.80434f57.js"
+    "static/js/main.292c8779.js"
   ]
 }

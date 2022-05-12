@@ -4,7 +4,7 @@ import { Menu } from './Menu';
 export const Header = () => {
 
   return (
-      <div className='background'>
+      <div className='background' id="home">
         <Menu />
         <div className='titleContainer'>
         <span className='date'> 2 · septiembre · 2023 </span>
