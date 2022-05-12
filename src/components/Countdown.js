@@ -4,7 +4,7 @@ export const Countdown = () => {
 
   const [today, setToday] = useState(new Date())
 
-  const weddingDay = new Date(2023, 2, 9, 19, 0, 0).getTime();
+  const weddingDay = new Date(2023, 8, 2, 19, 0, 0).getTime();
   let countdown = (weddingDay - today.getTime());
 
   const days = Math.floor(countdown / (1000 * 3600 * 24));

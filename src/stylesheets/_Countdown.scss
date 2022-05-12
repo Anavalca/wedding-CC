@@ -10,17 +10,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0.9rem;
+    padding: 0.5rem;
     font-size: 14px;
+    opacity: 0.8;
+
+    @include forTablet {
+      padding: 0.6rem;
+    }
 
     .numberDate {
-      font-size: 2rem;
+      font-size: 1.8rem;
       color: white;
       font-family: $numberFont;
-      font-weight: 200;
+      font-weight: 400;
 
       @include forTablet {
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 400;
       }
 

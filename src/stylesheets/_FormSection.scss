@@ -14,7 +14,7 @@
   }
 
   .formBackground {
-    padding: 20px;
+    padding: 20px 0 20px 0;
     background-color: rgba(245, 245, 245, 0.818);
     display: flex;
     flex-direction: column;
@@ -24,6 +24,7 @@
 
     @include forTablet{
       width: auto;
+      padding: 20px;
     }
 
 
