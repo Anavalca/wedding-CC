@@ -14,7 +14,7 @@
     align-items: center;
 
     .info {
-      padding: 2rem 0 2rem 0;
+      padding: 3rem 3.4rem 3.4rem 3.4rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -26,7 +26,15 @@
       }
 
       img {
-        width: 15rem;
+        width: 100%;
+
+        @include forTablet {
+          width: 50%;
+        }
+
+        @include forPc {
+          width: 40%;
+        }
       }
 
       .infoTitle {
@@ -39,51 +47,57 @@
 
         @include forTablet {
           padding: 0 0 0.2rem 0;
-          font-size: 3.5rem;
         }
       }
 
 
       .textContainer {
-        padding: 0 3.4rem 0 3.4rem;
         display: flex;
         flex-direction: column;
         align-items: center;
 
         @include forTablet {
-          width: 360px;
+          width: 50%;
+          padding: 0;
+        }
+
+        @include forPc {
+          width: 28%;
           padding: 0;
         }
 
         p {
-          font-size: 0.9rem;
-          padding-bottom: 0.6rem;
           text-align: justify;
+          padding-bottom: 0.8rem;
         }
 
-        .iconSection{
+        .iconSection {
           display: flex;
-                    
-          .iconContainer{
+
+
+          .iconContainer {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             padding: 0 7px 0 7px;
-            color: $secondaryColor;        
+            color: $secondaryColor;
             opacity: 0.8;
-            
-            p{
-              font-size: 0.7rem;
-              padding-top: 3px;
+
+            p {
+              font-size: 0.8rem;
+              font-weight: 600;
+              padding-top: 5px;
+              text-transform: uppercase;
+              padding-bottom: 0.8rem;
             }
+
           }
         }
 
       }
 
       .left {
-
         @include forTablet {
           padding-left: 3rem;
         }
@@ -102,13 +116,9 @@
       @include forTablet {
         flex-direction: row-reverse;
       }
-
-    
-
     }
 
-    button {
-      font-size: 0.9rem !important;
+    .link {
       color: $secondaryColor !important;
       background: none;
       color: inherit;
@@ -143,4 +153,50 @@
 
   }
 
+  .map {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 100%;
+      padding-bottom: 2rem;
+    }
+
+    .mapInfoContainer {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+
+      @include forTablet {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @include forPc {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+
+      .mapText {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        h4 {
+          font-weight: 500;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          color: $secondaryColor;
+        }
+
+        @include forTablet {
+          padding: 0.1rem;
+          padding-bottom: 1rem;
+          width: 270px;
+        }
+
+      }
+    }
+  }
 }

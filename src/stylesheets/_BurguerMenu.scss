@@ -75,7 +75,7 @@
  
   .navBurguer {
     width: 100%;
-    height: 37%;
+    height: 43%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -88,14 +88,16 @@
     a {
       border-bottom: 1px solid grey;
       border: 1px solid white;
-      width: 80%;
-      padding: 5px;
+      width: 85%;
+      padding: 6px;
       margin: 7px 0 7px 0;
       text-align: center;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       font-family: $textFont;
-      color: white;
+      color: white !important;
       text-transform: uppercase;
+      font-weight: 200 !important;
+      letter-spacing: 4px;
     }
   }
 

@@ -2,9 +2,9 @@
     {
         "id": 1,
         "title": "ceremonia",
-        "img": "../images/iglesia.jpg",
-        "text1": "Te esperamos el día 2 de septiembre de 2023 para celebrar con nosotros este día tan especial y que nunca olvidaremos. ¿Te apuntas?",
-        "text2": "El acto tendrá lugar en la Basílica Menor de la Sacra Iglesia Parroquial de San Ildefonso a las 19:00. ¡No lleges tarde!",
+        "img": "../images/iglesia.png",
+        "text1": "Te esperamos el sábado 2 de septiembre de 2023 para celebrar con nosotros este día tan especial.",
+        "text2": "La ceremonia será a las 19h. en la Basílica de San Ildefonso. ¡No llegues tarde!",
         "location":"Consultar ubicación",
         "style":"info",
         "align":"left",
@@ -24,9 +24,9 @@
     {
         "id": 2,
         "title": "Celebración",
-        "img": "../images/cerro.jpg",
-        "text1": "Tras la ceremonia, continuaremos la celebración en Cerro Puerta, un salón de bodas ubicado en un paraje natural y con unas vistas alucinantes.",
-        "text2": "El transporte hasta el restaurante podrá realizarse en autobús, ¡no olvides comunicarnos si necesitas plaza!",
+        "img": "../images/cerro-puerta.png",
+        "text1": "Tras la ceremonia, continuaremos la celebración en Cerro Puerta, ubicado en un paraje natural y con unas vistas inmejorables.",
+        "text2": "Para desplazarse al sitio, podréis coger los autobuses en la Plaza de toros, (delante del parking Alameda) a las 20:20h.",
         "location":"Consultar ubicación",
         "style":"info reverse",
         "align":"right",
@@ -41,6 +41,7 @@
         "zoom":"13",
         "mapTitle":"Cerro Puerta",
         "mapDescription":"Ctra. de la Guardia, km 4,8, Cañada Real La Guardia-Los Villares, 23170 Jaén",
-        "url":"https://www.google.com/maps/place/Cerropuerta/@37.748971,-3.739053,15z/data=!4m5!3m4!1s0x0:0x3b64471336d5fb66!8m2!3d37.748971!4d-3.739053"
+        "url":"https://www.google.com/maps/place/Cerropuerta/@37.748971,-3.739053,15z/data=!4m5!3m4!1s0x0:0x3b64471336d5fb66!8m2!3d37.748971!4d-3.739053",
+        "bus":"https://forms.gle/76PwG1tvC2q7qFa7A"
     }
 ]

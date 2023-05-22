@@ -17,8 +17,10 @@ export const BurgerMenu = () => {
         {burguerToogle && (
           <nav className='navBurguer'>
             <a href='#home' onClick={() => setBurguerToogle(!burguerToogle)}>Inicio</a>
+            <a href='#confirmation' onClick={() => setBurguerToogle(!burguerToogle)}>Confirma tu asitencia</a>
             <a href="#location" onClick={() => setBurguerToogle(!burguerToogle)}>Detalles del evento</a>
-            <a href="#galery" onClick={() => setBurguerToogle(!burguerToogle)}>Galeria</a>
+            <a href='#photos' onClick={() => setBurguerToogle(!burguerToogle)}>Comparte tus fotos</a>
+            <a href="#galery" onClick={() => setBurguerToogle(!burguerToogle)}>Galería</a>
             <a href="#form" onClick={() => setBurguerToogle(!burguerToogle)}>Contacto</a>
           </nav>
         )}

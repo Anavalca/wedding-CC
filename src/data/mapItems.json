@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Hotel Xauen Jaén",
+    "location":"Pl. Dean Mazas, 3, 23001 Jaén",
+    "phone":"953 24 07 89",
+    "map":"https://acortar.link/L363e3"
+  },
+  {
+    "id": 2,
+    "title": "Hotel Europa Jaén",
+    "location":"Pl. de Belén, 1, 23001 Jaén",
+    "phone":"953 22 27 00",
+    "map":"https://acortar.link/MZh5Nq"
+  },
+  {
+    "id": 3,
+    "title": "Interparking Pza. Constitución",
+    "location":"Pl. de la Constitución, S/N, 23001 Jaén",
+    "phone":"953 24 51 91",
+    "map":"https://acortar.link/7hFkXu"
+  },
+  {
+    "id": 4,
+    "title": "Parking Alameda Centro",
+    "location":"Pl. de Toros, 15, 23001 Jaén",
+    "map":"https://acortar.link/lcIAy6"
+  }
+]

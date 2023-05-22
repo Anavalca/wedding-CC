@@ -1,0 +1,19 @@
+.confirmationContainer{
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  background-color: $secondaryColor;
+  cursor: pointer;
+
+  .confirmationText{
+    font-weight: 300;
+    letter-spacing: 4px;
+    color: white;
+    font-size: 1.1rem;
+
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+
+}

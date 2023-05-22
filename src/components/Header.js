@@ -7,12 +7,13 @@ export const Header = () => {
       <div className='background' id="home">
         <Menu />
         <div className='titleContainer'>
-        <span className='date'> 2 · septiembre · 2023 </span>
           <h1 className='titleSubContainer'>
             <p className='title'>Cristina</p>
             <p className='title and'>&</p>
             <p className='title'>Curro</p>
           </h1>
+          <span className='date'> 2 de septiembre de 2023 </span>
+          <span className='hashtag'> #miGranBodaJienense</span>
           <Countdown />
         </div>
         <div className='scrollContainer'>

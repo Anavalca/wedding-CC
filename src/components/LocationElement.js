@@ -6,7 +6,7 @@ import { Map } from './Map';
 
 export const LocationElement = ({ element }) => {
   const { img, title, text1, text2, location, style, align, icon1, icon2, icon3, iconText1, iconText2, iconText3,
-    mapCoordenateA, mapCoordenateB, zoom, mapTitle, mapDescription, url } = element;
+    mapCoordenateA, mapCoordenateB, zoom, mapTitle, mapDescription, url, bus } = element;
   const iconArray = [faCalendarDay, faClock, faChurch, faBus, faUtensils, faChampagneGlasses]
 
   const [isOpen, setIsOpen] = useState(false);
@@ -36,9 +36,12 @@ export const LocationElement = ({ element }) => {
         </div>
         <div>
           <p>{text1}</p>
-          <p>{text2}</p>
+          <p>{text2}{bus && (
+            <><a href="https://forms.gle/76PwG1tvC2q7qFa7A" className='link' alt='Reservar autobús' target='_blank' rel='noreferrer noopener' > ¡Reserva tu plaza aquí!</a><span> Si preferís ir en coche, hay parking gratuito</span>
+            </>
+          )}</p>
         </div>
-        <button onClick={toggleModal}>
+        <button onClick={toggleModal} className='link'>
           <FontAwesomeIcon icon={faLocationDot} className='locationIcon' />
           <span>{location}</span>
         </button>
