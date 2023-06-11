@@ -2,10 +2,17 @@ footer {
   width: 100%;
   height: 34px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  gap:8px;
+  margin: 15px 0;
 
-
+  @include forTablet {
+    flex-direction: row;
+    gap: 0;
+    margin: 8px 0;
+  }
 
   a {
     font-size: 10px;
@@ -14,8 +21,12 @@ footer {
     align-items: center;
 
     img{
-      height: 20px;
-      margin-right: 3px;
+      height: 15px;
+      margin-right: 5px;
+      
+      @include forTablet {
+        height: 20px;
+      }
     }
     .name{
       font-weight: 500;
@@ -23,7 +34,6 @@ footer {
 
     @include forTablet {
       font-size: 12px;
-
     }
   }
 
