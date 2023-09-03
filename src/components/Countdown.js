@@ -15,6 +15,7 @@ export const Countdown = () => {
   countdown = countdown - (minutes * (1000 * 60))
   const seconds = Math.floor(countdown / (1000));
 
+  let isDay = weddingDay > today.getTime()
 
   useEffect(() => {
     setInterval(() => setToday(new Date()), 1000);
@@ -24,23 +25,27 @@ export const Countdown = () => {
   }, [])
 
   return (
-    <div className='countdownContainer'>
-      <div className='dateContainer'>
-        <p className="numberDate">{days}</p>
-          <p className='titleDate'>días</p>
-      </div>
-      <div className='dateContainer'>
-        <p className="numberDate">{hours}</p>
-          <p className='titleDate'>horas</p>
-      </div>
-      <div className='dateContainer'>
-        <p className="numberDate">{minutes}</p>
-          <p className='titleDate'>minutos</p>
-      </div>
-      <div className='dateContainer'>
-        <p className="numberDate">{seconds}</p>
-          <p className='titleDate'>segundos</p>
-      </div>
-    </div>
+    <>
+      {isDay && (
+        <div className='countdownContainer'>
+          <div className='dateContainer'>
+            <p className="numberDate">{days}</p>
+            <p className='titleDate'>días</p>
+          </div>
+          <div className='dateContainer'>
+            <p className="numberDate">{hours}</p>
+            <p className='titleDate'>horas</p>
+          </div>
+          <div className='dateContainer'>
+            <p className="numberDate">{minutes}</p>
+            <p className='titleDate'>minutos</p>
+          </div>
+          <div className='dateContainer'>
+            <p className="numberDate">{seconds}</p>
+            <p className='titleDate'>segundos</p>
+          </div>
+        </div>
+      )}
+    </>
   );
 }

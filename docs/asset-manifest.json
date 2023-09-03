@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "./static/css/main.29e935ca.css",
-    "main.js": "./static/js/main.64074276.js",
+    "main.js": "./static/js/main.5b573715.js",
     "static/media/coctails.jpg": "./static/media/coctails.db8c5902dccabc725dcd.jpg",
     "static/media/flores-banner.jpg": "./static/media/flores-banner.39f77a3a640f52554ef3.jpg",
     "static/media/header.jpg": "./static/media/header.208adcff1df35c0f20dd.jpg",
     "static/media/Mapa-Cris-y-Curro.png": "./static/media/Mapa-Cris-y-Curro.2bead40ef4c7fbc8e090.png",
     "index.html": "./index.html",
     "main.29e935ca.css.map": "./static/css/main.29e935ca.css.map",
-    "main.64074276.js.map": "./static/js/main.64074276.js.map"
+    "main.5b573715.js.map": "./static/js/main.5b573715.js.map"
   },
   "entrypoints": [
     "static/css/main.29e935ca.css",
-    "static/js/main.64074276.js"
+    "static/js/main.5b573715.js"
   ]
 }
